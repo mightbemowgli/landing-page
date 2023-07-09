@@ -2,24 +2,55 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer, .hero {
     background-color: #1F2937;
+}
+
+.head {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     display: flex;
+    margin: 10px 0;
 }
 
 .links ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
+    /* flex: 1; */
+}
+
+.hero {
+    display: flex;
+    margin: 48px;
+    gap: 24px;
+    /* min-width: 500px; */
+    /* justify-content: space-around; */
+}
+
+.hero-card {
+    flex: 1;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a, .hero-card p {
@@ -58,4 +89,14 @@ button, .call-section {
     font-size: 36px;
     font-weight: 400;
     color: #1F2937;
+    text-align: justify;
+    margin: 24px;
+    padding: 24px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

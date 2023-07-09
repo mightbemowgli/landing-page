@@ -8,16 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="logo">Header Logo</div>
-        <div class="links">
-            <ul>
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
-            </ul>
+        <div class="head">
+            <div class="logo">Header Logo</div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
         <div class="hero">
+                        <!-- Find a way to prevent the divs from overflowing the parent container -->
             <div class="hero-card">
                 <h1>This website is awesome</h1>
                 <p>This website has some subject text that goes here 
@@ -26,9 +28,11 @@
                 </p>
                 <button>Sign Up</button>
             </div>
-            <img src="./photos/grampa.JPG" height="200" width="auto"/>
+            <div class="hero-image">
+                <img src="./photos/grampa.JPG" height="250" width="auto"/>
+            </div>
         </div>
-    <!-- </header> -->
+    </header>
     <main>
         <h2>Some random information.</h2>
         <div class="content-cards">
@@ -38,8 +42,10 @@
             <div class="card"></div>
         </div>
         <aside class="quote-section">
-            <p class="quote-text"><em>Insert quote here.</em></p>
-            <p>Person who said it</p>
+            <p class="quote-text"><em>This is an inspiring quote, or a testimonial from a customer. Maybe 
+                it's just filling up space, or maybe people will actually read it. Who knows? All I know 
+                is that it looks nice.</em></p>
+            <p>-Thor, the God of Thunder</p>
         </aside>
         <div class="call-section">
             <div class="action">
