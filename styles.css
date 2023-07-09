@@ -1,14 +1,25 @@
-header, footer {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+header, footer, .hero {
     background-color: #1F2937;
+    display: flex;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    display: flex;
 }
 
-ul {
+.links ul {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 a, .hero-card p {
