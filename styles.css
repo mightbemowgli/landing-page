@@ -11,8 +11,29 @@ body {
     flex-direction: column;
 }
 
-header, footer, .hero {
+.dark-bg {
     background-color: #1F2937;
+}
+
+.dark-text {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.light-text {
+    color: #E5E7EB;
+}
+
+.light-border {
+    border: 1px solid #F9FAF8;
+}
+
+.blue {
+    background-color: #3882f6;
+}
+
+.extra-bold {
+    font-weight: 900;
 }
 
 .head {
@@ -32,57 +53,62 @@ header, footer, .hero {
     list-style: none;
     display: flex;
     gap: 20px;
-    /* flex: 1; */
 }
 
 .hero {
     display: flex;
+    justify-content: center;
     margin: 48px;
     gap: 24px;
-    /* min-width: 500px; */
-    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+
+.hero-card h1,
+.hero-card p,
+.hero-card button {
+    margin: 5px;
 }
 
 .hero-card {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: flex-start;
 }
 
-.hero-image{
+.hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a, .hero-card p {
+a {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 h1 {
     font-size: 48px;
-    font-weight: 900;
     color: #f9FAF8;
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
+    text-align: center;
+    margin: 24px 0;
 }
 
-h3, .action p, footer {
-    color: #E5E7EB;
+button {
+    border: none;
+    color: #F9FAF8;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
 }
-
-button, .call-section {
-    background-color: #3882f6;
-}
-
-/* separate hero/CTA button border color */
 
 .quote-section {
     background-color: #E5E7EB;
+    padding: 24px;
 }
 
 .quote-text {
@@ -90,8 +116,20 @@ button, .call-section {
     font-weight: 400;
     color: #1F2937;
     text-align: justify;
-    margin: 24px;
+}
+
+.justify-right {
+    text-align: right;
+}
+
+.call-section {
+    width: 70%;
+    margin: 48px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 24px;
+    border-radius: 12px;
 }
 
 footer {
@@ -99,4 +137,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px;
 }
